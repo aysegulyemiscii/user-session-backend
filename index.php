@@ -1,5 +1,6 @@
 <?php
 header("Access-Control-Allow-Origin: *");
+header("Content-Type: application/json");
 
 $apiUrl = 'http://case-test-api.humanas.io/';
 $response = file_get_contents($apiUrl);
@@ -89,7 +90,6 @@ foreach ($users as $user) {
     ];
 }
 
-header('Content-Type: application/json');
 echo json_encode($result, JSON_PRETTY_PRINT);
 
 ?>
