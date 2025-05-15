@@ -29,7 +29,7 @@ function predictByAverageInterval($logins) {
     // Eğer sapma 1 saatten az ise %90 güven, daha fazlası ise %65 güven.
 
     $lastLogin = end($timestamps);
-    return [date('Y-m-d H:i:s', $lastLogin + $avg), $confidence];
+   return [date('Y-m-d H:i:s', (int) ($lastLogin + $avg)), $confidence];
 }
 
 
