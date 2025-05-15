@@ -1,5 +1,4 @@
 <?php
-
 header("Access-Control-Allow-Origin: *");
 
 $apiUrl = 'http://case-test-api.humanas.io/';
